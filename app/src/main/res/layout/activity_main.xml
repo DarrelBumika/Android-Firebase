@@ -6,9 +6,30 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="32dp"
     android:background="#FFFFFF"
     tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List of Books Management"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome, someone!"
+        android:textColor="#A0A0A0"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="16dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvBooks"
