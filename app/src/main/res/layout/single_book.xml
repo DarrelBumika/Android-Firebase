@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="8dp"
     android:padding="16dp"
     app:cardCornerRadius="16dp"
     app:cardElevation="4dp">
@@ -56,7 +58,6 @@
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
-
                 <TextView
                     android:id="@+id/tvBookAuthor"
                     android:layout_width="wrap_content"
@@ -64,7 +65,6 @@
                     android:textColor="#787878"
                     android:textSize="12sp"
                     app:drawableLeftCompat="@drawable/baseline_person_outline_16" />
-
 
         </LinearLayout>
 
