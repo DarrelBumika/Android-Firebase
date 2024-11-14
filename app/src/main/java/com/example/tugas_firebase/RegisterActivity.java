@@ -33,7 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
     Map<String, Object> users = new HashMap<>();
 
     private FirebaseAuth mAuth;
-    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private FirebaseFirestore db;
 
     EditText etRegisterUsername;
     EditText etRegisterEmail;
@@ -48,6 +48,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         mAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
 
         etRegisterUsername = findViewById(R.id.etRegisterUsername);
         etRegisterEmail = findViewById(R.id.etRegisterEmail);
@@ -113,7 +114,7 @@ public class RegisterActivity extends AppCompatActivity {
             });
     }
 
-    void addUser(String username, String email) {
+    private void addUser(String username, String email) {
         users.put("username", username);
         users.put("email", email);
 
